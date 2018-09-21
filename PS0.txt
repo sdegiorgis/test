@@ -1,5 +1,12 @@
 Sarah DeGiorgis
 PS 0
 Directed Study
-	I would like to study housing affordability and tenure in Philadelphia and Camden.  I will use data from property tax records, specifically:  number of units (single family/multifamily), zoning, transaction date, mortgage (y/n, just to see if there is a mortgage on the property), most recent sale price, most recent sale date, most recent assessment value.  I would like to see if assessed value or sale price has any influence on tenure, both in Philadelphia and Camden.  Since I’m giving myself a fairly large geographic area, I may just focus on a few neighborhoods but I need to explore the data a little more before deciding on that.  
-	My data will primarily come from Open Data Philly:  https://www.opendataphilly.org/dataset/property-parcels and the New Jersey Property Tax List search:  https://www.state.nj.us/treasury/taxation/lpt/TaxListSearchPublicWebpage.shtml.  I imagine I will also be using some Census data but at this point I’m not sure if that will be necessary.
+	I would like to study housing affordability and tenure in Philadelphia and Camden.  I will use data from property tax records, 
+	
+url? ah ok, it is below
+	
+	specifically:  number of units (single family/multifamily), zoning, transaction date, mortgage (y/n, just to see if there is a mortgage on the property), most recent sale price, most recent sale date, most recent assessment value.  I would like to see if assessed value or sale price has any influence on tenure, both in Philadelphia and Camden.  Since Iâ€™m giving myself a fairly large geographic area, I may just focus on a few neighborhoods but I need to explore the data a little more before deciding on that.  
+	My data will primarily come from Open Data Philly:  https://www.opendataphilly.org/dataset/property-parcels and the New Jersey Property Tax List search:  https://www.state.nj.us/treasury/taxation/lpt/TaxListSearchPublicWebpage.shtml.  I imagine I will also be using some Census data but at this point Iâ€™m not sure if that will be necessary.
+
+good! yes census, for merging :)
+good start! looking forward to a  dofile!
