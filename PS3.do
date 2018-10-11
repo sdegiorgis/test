@@ -16,7 +16,7 @@ save subsample10merged, replace //this is the dataset I merged in PS2
 
 use https://github.com/sdegiorgis/test/raw/master/subsample10.dta, clear
 edit
-drop building_code category_code garage_spaces garage_type mailing*//getting rid of some variables I don't need
+drop building_code category_code garage_spaces garage_type mailing* //getting rid of some variables I don't need
 gen zip=substr(zip_code, 1, 5) //to get 5 digit zip code
 *One missing value bc one was missing in the original dataset
 edit //to take a look - I've created a variable "zip" which is just the first five digits of zip_code
@@ -39,6 +39,11 @@ save ACSownerrenter, replace
 
 use subsample10clean, clear
 merge m:1 zip5 using ACSownerrenter //again using many to one.  merged!
+l zip5 if _merge~=3
+drop if _merge==2 //drop ifsay we dont need them bc they dont match the core
+
+drop _merge
+
 save merged1, replace //saving this version to merge more to
 
 *Merge 2*
@@ -60,5 +65,8 @@ edit
 save ACSmortgage, replace
 
 use merged2, clear
+ren * sarah_*
+
+
 merge m:1 zip5 using ACSmortgage, gen(merge3) //telling it to name the new variable something other than _merge (default)
 *ok I thought it would only merge on zip5 but apparently because I have two v5 variables it is trying to merge those too?
