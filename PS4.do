@@ -34,3 +34,6 @@ insheet using insheet using https://raw.githubusercontent.com/sdegiorgis/test/ma
 twoway (bar totalhouseholds id2) (bar householdsbelowpovertylevel id2), xlabel(#49, labsize(tiny) ticks)
 twoway (bar totalhouseholds id2) (bar householdsbelowpovertylevel id2) (line hoseholdsreceivingsnap id2), xlabel(#49, labsize(tiny) ticks)
 *I'm trying to show how many households are below poverty level and how many above.  The line (which is # of households receiving SNAP or food stamps) does what I expect it to
+//https://www.stata.com/manuals13/mvmca.pdf
+//https://janfredrikhovden.wordpress.com/2011/09/22/multiple-correspondence-analysis-with-stata/
+: https://www.google.com/search?q=dendogram+stata&ie=utf-8&oe=utf-8&client=firefox-b-1-ab 
